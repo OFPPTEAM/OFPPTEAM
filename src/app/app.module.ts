@@ -16,7 +16,6 @@ import { BadgeComponent } from './badge/badge.component';
 import { EspaceetaComponent } from './espaceeta/espaceeta.component';
 import { EspacedepComponent } from './espacedep/espacedep.component';
 import { EspacegerComponent } from './espaceger/espaceger.component';
-import { NouveauComponent } from './nouveau/nouveau.component';
 import { ConfirmeComponent } from './Validation/confirme/confirme.component';
 import { Etap1Component } from './etapes/etap1/etap1.component';
 const routes: Routes = [
@@ -34,6 +33,9 @@ const routes: Routes = [
   },
   {
     path: 'forum', component: ForumComponent, children: [
+      {
+        path: '', redirectTo: '/forum/filiere', pathMatch: 'full'
+      },
       {
         path: 'filiere', component: FiliereComponent , children: []
       },
@@ -88,7 +90,6 @@ const routes: Routes = [
     EspaceetaComponent,
     EspacedepComponent,
     EspacegerComponent,
-    NouveauComponent,
     ConfirmeComponent
   ],
   imports: [
