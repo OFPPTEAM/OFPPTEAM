@@ -18,6 +18,7 @@ import { BadgeComponent } from './badge/badge.component';
 import { EspaceetaComponent } from './espaceeta/espaceeta.component';
 import { EspacedepComponent } from './espacedep/espacedep.component';
 import { EspacegerComponent } from './espaceger/espaceger.component';
+import { NouveauComponent } from './nouveau/nouveau.component';
 
 const routes:Routes=[
   {
@@ -88,7 +89,8 @@ const routes:Routes=[
     BadgeComponent,
     EspaceetaComponent,
     EspacedepComponent,
-    EspacegerComponent
+    EspacegerComponent,
+    NouveauComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(routes)
