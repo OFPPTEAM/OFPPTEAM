@@ -17,7 +17,6 @@ import { BadgeComponent } from './badge/badge.component';
 import { EspaceetaComponent } from './espaceeta/espaceeta.component';
 import { EspacedepComponent } from './espacedep/espacedep.component';
 import { EspacegerComponent } from './espaceger/espaceger.component';
-import { NouveauComponent } from './nouveau/nouveau.component';
 import { ConfirmeComponent } from './Validation/confirme/confirme.component';
 
 const routes: Routes = [
@@ -89,7 +88,6 @@ const routes: Routes = [
     EspaceetaComponent,
     EspacedepComponent,
     EspacegerComponent,
-    NouveauComponent,
     ConfirmeComponent
   ],
   imports: [
