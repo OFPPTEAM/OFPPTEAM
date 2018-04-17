@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GroupComponent } from './group/group.component';
@@ -19,7 +18,7 @@ import { EspacedepComponent } from './espacedep/espacedep.component';
 import { EspacegerComponent } from './espaceger/espaceger.component';
 import { NouveauComponent } from './nouveau/nouveau.component';
 import { ConfirmeComponent } from './Validation/confirme/confirme.component';
-
+import { Etap1Component } from './etapes/etap1/etap1.component';
 const routes: Routes = [
   {
     path: '', redirectTo: '/home', pathMatch: 'full'
