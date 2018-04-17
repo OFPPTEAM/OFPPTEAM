@@ -34,6 +34,42 @@ const routes: Routes = [
   },
   {
     path: 'forum', component: ForumComponent, children: [
+<<<<<<< HEAD
+    {
+       path: 'filiere', component: FiliereComponent , children: []
+    },
+    {
+        path: 'statut', component: StatutComponent
+    },
+    {
+        path: 'modUle', component: ModUleComponent, children: [
+        {
+            path: 'mod1', component: Mod1Component
+        }
+      ]
+    }
+   ]
+  },
+  {
+    path: 'contact', component: ContactComponent
+  },
+  {
+    path: 'attestation', component: AttestationComponent
+  },
+  {
+    path: 'badge', component: BadgeComponent
+  },
+  {
+    path: 'espacedep', component: EspacedepComponent
+  },
+  {
+    path: 'espaceeta', component: EspaceetaComponent
+  },
+  {
+    path: 'espaceger', component: EspacedepComponent
+  }
+
+=======
       {
         path: 'filiere', component: FiliereComponent , children: []
       },
@@ -67,6 +103,7 @@ const routes: Routes = [
   {
     path: 'espaceger', component: EspacegerComponent
   }
+>>>>>>> origin/master
 ];
 
 
