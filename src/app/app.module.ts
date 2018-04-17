@@ -66,7 +66,7 @@ const routes: Routes = [
     path: 'espaceeta', component: EspaceetaComponent
   },
   {
-    path: 'espaceger', component: EspacedepComponent
+    path: 'espaceger', component: EspacegerComponent
   }
 ];
 
