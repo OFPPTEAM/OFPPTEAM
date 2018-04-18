@@ -17,7 +17,11 @@ import { EspaceetaComponent } from './espaceeta/espaceeta.component';
 import { EspacedepComponent } from './espacedep/espacedep.component';
 import { EspacegerComponent } from './espaceger/espaceger.component';
 import { ConfirmeComponent } from './Validation/confirme/confirme.component';
-import { Etap1Component } from './etapes/etap1/etap1.component';
+
+import { ChoixetablisementComponent } from './choixvisiteur/choixetablisement/choixetablisement.component';
+import { ChoixfiliereComponent } from './choixvisiteur/choixfiliere/choixfiliere.component';
+import { AffichagechoixComponent } from './choixvisiteur/affichagechoix/affichagechoix.component';
+
 const routes: Routes = [
   {
     path: '', redirectTo: '/home', pathMatch: 'full'
@@ -70,7 +74,13 @@ const routes: Routes = [
     path: 'espaceger', component: EspacegerComponent
   },
   { 
-    path:'etap1',component:Etap1Component
+    path:'choixetablisement',component:ChoixetablisementComponent
+  },
+  { 
+    path:'choixfiliere',component:ChoixfiliereComponent
+  },
+  { 
+    path:'affichagefiliere',component:AffichagechoixComponent
   }
  
 ];
@@ -95,7 +105,10 @@ const routes: Routes = [
     EspacedepComponent,
     EspacegerComponent,
     ConfirmeComponent,
-    Etap1Component
+   ChoixetablisementComponent,
+   ChoixfiliereComponent,
+   AffichagechoixComponent,
+
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)
