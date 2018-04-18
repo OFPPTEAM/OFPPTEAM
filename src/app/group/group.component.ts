@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GroupComponent implements OnInit {
 
+  data = Date.now();
+  stagiaire = { nom: '', prenom: '', filiere: '', image: '', adresse: ''};
+  stagiaires = [];
+  formateurs = [];
+
   constructor() { }
 
   ngOnInit() {

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GroupComponent } from './group/group.component';
@@ -18,6 +19,10 @@ import { EspacedepComponent } from './espacedep/espacedep.component';
 import { EspacegerComponent } from './espaceger/espaceger.component';
 import { ConfirmeComponent } from './Validation/confirme/confirme.component';
 import { Etap1Component } from './etapes/etap1/etap1.component';
+import { ListStagiaireComponent } from './group/list-stagiaire/list-stagiaire.component';
+import { ListFormateurComponent } from './group/list-formateur/list-formateur.component';
+import { NotificationComponent } from './group/notification/notification.component';
+
 const routes: Routes = [
   {
     path: '', redirectTo: '/home', pathMatch: 'full'
@@ -26,7 +31,20 @@ const routes: Routes = [
     path: 'home', component: HomeComponent
   },
   {
-    path: 'group', component: GroupComponent
+    path: 'group', component: GroupComponent, children: [
+      {
+        path: '', redirectTo: '/group/Notification', pathMatch: 'full'
+      },
+      {
+        path: 'Notification', component: NotificationComponent
+      },
+      {
+        path: 'ListStagiaire', component: ListStagiaireComponent
+      },
+      {
+        path: 'ListFormateur', component: ListFormateurComponent
+      }
+    ]
   },
   {
     path: 'demande', component: DemandeComponent
@@ -90,7 +108,10 @@ const routes: Routes = [
     EspaceetaComponent,
     EspacedepComponent,
     EspacegerComponent,
-    ConfirmeComponent
+    ConfirmeComponent,
+    ListStagiaireComponent,
+    ListFormateurComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)
