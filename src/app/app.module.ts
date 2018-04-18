@@ -68,7 +68,11 @@ const routes: Routes = [
   },
   {
     path: 'espaceger', component: EspacegerComponent
+  },
+  { 
+    path:'etap1',component:Etap1Component
   }
+ 
 ];
 
 
@@ -90,7 +94,8 @@ const routes: Routes = [
     EspaceetaComponent,
     EspacedepComponent,
     EspacegerComponent,
-    ConfirmeComponent
+    ConfirmeComponent,
+    Etap1Component
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)
