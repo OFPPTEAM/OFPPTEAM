@@ -1,11 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
 
 import { Routes } from '@angular/router';
-=======
-import { RouterModule, Routes } from '@angular/router';
->>>>>>> origin/master
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GroupComponent } from './group/group.component';
@@ -22,12 +18,6 @@ import { BadgeComponent } from './badge/badge.component';
 import { EspaceetaComponent } from './espaceeta/espaceeta.component';
 import { EspacedepComponent } from './espacedep/espacedep.component';
 import { EspacegerComponent } from './espaceger/espaceger.component';
-<<<<<<< HEAD
-
-=======
-import { ConfirmeComponent } from './Validation/confirme/confirme.component';
-import { Etap1Component } from './etapes/etap1/etap1.component';
->>>>>>> origin/master
 const routes: Routes = [
   {
     path: '', redirectTo: '/home', pathMatch: 'full'
@@ -43,7 +33,6 @@ const routes: Routes = [
   },
   {
     path: 'forum', component: ForumComponent, children: [
-<<<<<<< HEAD
     {
        path: 'filiere', component: FiliereComponent , children: []
     },
@@ -58,25 +47,6 @@ const routes: Routes = [
       ]
     }
    ]
-=======
-      {
-        path: '', redirectTo: '/forum/filiere', pathMatch: 'full'
-      },
-      {
-        path: 'filiere', component: FiliereComponent , children: []
-      },
-      {
-            path: 'statut', component: StatutComponent
-      },
-      {
-        path: 'modUle', component: ModUleComponent, children: [
-          {
-            path: 'mod1', component: Mod1Component
-          }
-        ]
-      }
-    ]
->>>>>>> origin/master
   },
   {
     path: 'contact', component: ContactComponent
@@ -94,14 +64,9 @@ const routes: Routes = [
     path: 'espaceeta', component: EspaceetaComponent
   },
   {
-<<<<<<< HEAD
     path: 'espaceger', component: EspacedepComponent
   }
 
-=======
-    path: 'espaceger', component: EspacegerComponent
-  }
->>>>>>> origin/master
 ];
 
 
@@ -122,12 +87,7 @@ const routes: Routes = [
     BadgeComponent,
     EspaceetaComponent,
     EspacedepComponent,
-<<<<<<< HEAD
     EspacegerComponent
-=======
-    EspacegerComponent,
-    ConfirmeComponent
->>>>>>> origin/master
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)
