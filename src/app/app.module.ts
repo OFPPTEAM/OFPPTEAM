@@ -80,7 +80,7 @@ const routes: Routes = [
     path:'choixfiliere',component:ChoixfiliereComponent
   },
   { 
-    path:'affichagefiliere',component:AffichagechoixComponent
+    path:'affichagechoix',component:AffichagechoixComponent
   }
  
 ];
