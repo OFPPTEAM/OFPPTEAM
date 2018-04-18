@@ -62,6 +62,7 @@ const routes: Routes = [
     }
    ]
   },
+
       {
         path: '', redirectTo: '/forum/filiere', pathMatch: 'full'
       },
@@ -81,6 +82,7 @@ const routes: Routes = [
     
 
  
+
   {
     path: 'contact', component: ContactComponent
   },
@@ -113,6 +115,8 @@ const routes: Routes = [
     path:'affichagechoix',component:AffichagechoixComponent
   }
  
+
+
 ];
 
 
@@ -134,6 +138,7 @@ const routes: Routes = [
     EspaceetaComponent,
     EspacedepComponent,
 
+
     EspacegerComponent,
 
     ConfirmeComponent,
@@ -142,6 +147,9 @@ const routes: Routes = [
    AffichagechoixComponent,
 
 
+
+
+    EspacegerComponent
 
   ],
   imports: [
