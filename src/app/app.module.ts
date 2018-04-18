@@ -18,10 +18,14 @@ import { EspaceetaComponent } from './espaceeta/espaceeta.component';
 import { EspacedepComponent } from './espacedep/espacedep.component';
 import { EspacegerComponent } from './espaceger/espaceger.component';
 import { ConfirmeComponent } from './Validation/confirme/confirme.component';
-import { Etap1Component } from './etapes/etap1/etap1.component';
 import { ListStagiaireComponent } from './group/list-stagiaire/list-stagiaire.component';
 import { ListFormateurComponent } from './group/list-formateur/list-formateur.component';
 import { NotificationComponent } from './group/notification/notification.component';
+import { ChoixetablisementComponent } from './choixvisiteur/choixetablisement/choixetablisement.component';
+import { ChoixfiliereComponent } from './choixvisiteur/choixfiliere/choixfiliere.component';
+import { AffichagechoixComponent } from './choixvisiteur/affichagechoix/affichagechoix.component';
+
+
 
 const routes: Routes = [
   {
@@ -54,6 +58,25 @@ const routes: Routes = [
       {
         path: '', redirectTo: '/forum/filiere', pathMatch: 'full'
       },
+    {
+       path: 'filiere', component: FiliereComponent , children: []
+    },
+    {
+        path: 'statut', component: StatutComponent
+    },
+    {
+        path: 'modUle', component: ModUleComponent, children: [
+        {
+            path: 'mod1', component: Mod1Component
+        }
+      ]
+    }
+   ]
+  },
+
+      {
+        path: '', redirectTo: '/forum/filiere', pathMatch: 'full'
+      },
       {
         path: 'filiere', component: FiliereComponent , children: []
       },
@@ -66,9 +89,7 @@ const routes: Routes = [
             path: 'mod1', component: Mod1Component
           }
         ]
-      }
-    ]
-  },
+      },
   {
     path: 'contact', component: ContactComponent
   },
@@ -85,8 +106,23 @@ const routes: Routes = [
     path: 'espaceeta', component: EspaceetaComponent
   },
   {
-    path: 'espaceger', component: EspacegerComponent
+
+    path: 'espaceger', component: EspacedepComponent
+  },
+
+
+
+  {
+    path: 'choixetablisement', component: ChoixetablisementComponent
+  },
+  {
+    path: 'choixfiliere', component: ChoixfiliereComponent
+  },
+  {
+    path: 'affichagechoix', component: AffichagechoixComponent
   }
+
+
 ];
 
 
@@ -111,7 +147,14 @@ const routes: Routes = [
     ConfirmeComponent,
     ListStagiaireComponent,
     ListFormateurComponent,
-    NotificationComponent
+    NotificationComponent,
+    ListStagiaireComponent,
+    ListFormateurComponent,
+    ChoixetablisementComponent,
+    ChoixfiliereComponent,
+    AffichagechoixComponent,
+    EspacegerComponent
+
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)
