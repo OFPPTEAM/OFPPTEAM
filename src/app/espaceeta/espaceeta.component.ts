@@ -9,19 +9,19 @@ import { etablis } from '../etablis';
 export class EspaceetaComponent implements OnInit {
 
   etafilier: etablis[];
-  constructor( public  etabliservice: EtablissementService) {
+  constructor( ) {
 
   }
 
   ngOnInit() {
-    this.etabliservice.getetablissement().subscribe(etafilier => {
-      this.etafilier = etafilier;
+    // this.etabliservice.getetablissement().subscribe(etafilier => {
+    //   this.etafilier = etafilier;
     // this.etabliservice.getetaFiliere().subscribe(etafilier => {
     //     this.etafilier = etafilier;
     // this.etabliservice.getfiliere().subscribe(etafilier => {
     //       this.etafilier = etafilier;
-      console.log(this.etafilier);
-    });
+      // console.log(this.etafilier);
+    // });
   }
 
 }

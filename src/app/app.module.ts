@@ -174,14 +174,11 @@ const routes: Routes = [
     BrowserModule, RouterModule.forRoot(routes),
     AngularFireModule.initializeApp(firebaseconfig)
   ],
-<<<<<<< HEAD
   providers: [
     AngularFireDatabase,
     AngularFireAuth,
-    EtablissementService],
-=======
-  providers: [GroupServService],
->>>>>>> origin/master
+    EtablissementService,
+    GroupServService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
