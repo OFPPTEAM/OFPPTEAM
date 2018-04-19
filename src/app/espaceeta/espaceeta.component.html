@@ -2,10 +2,10 @@
   <div class="mt-5">
     <div class="jumbotron container col-md-6 mt-5">
         <select class="form-control">
-            <option>choixniveau</option>
+            <option *ngFor="let item of etafilier | async" >{{item.ville |json}}</option>
           </select>
           <div class="mt-5 ml-5">
-        
+
           <input routerLink="/choixetablisement" type="button" value="Ignore" class="btn btn-secondary">
             <input routerLink="/choixetablisement" type="button" value="Suivant" class="btn btn-primary">
            </div>
