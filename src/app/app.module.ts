@@ -5,6 +5,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 
+import { GroupServService } from './group/group-serv.service';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GroupComponent } from './group/group.component';
@@ -172,10 +174,14 @@ const routes: Routes = [
     BrowserModule, RouterModule.forRoot(routes),
     AngularFireModule.initializeApp(firebaseconfig)
   ],
+<<<<<<< HEAD
   providers: [
     AngularFireDatabase,
     AngularFireAuth,
     EtablissementService],
+=======
+  providers: [GroupServService],
+>>>>>>> origin/master
   bootstrap: [AppComponent]
 })
 export class AppModule { }
