@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -25,7 +28,16 @@ import { ChoixetablisementComponent } from './choixvisiteur/choixetablisement/ch
 import { ChoixfiliereComponent } from './choixvisiteur/choixfiliere/choixfiliere.component';
 import { AffichagechoixComponent } from './choixvisiteur/affichagechoix/affichagechoix.component';
 
+import { EtablissementService } from './services/etablissement.service';
 
+export const firebaseconfig = {
+  apiKey: 'AIzaSyCJRXGPehxpZCpg1ZJk9Zoi9yKOfcNYhRs',
+  authDomain: 'ofppt-team.firebaseapp.com',
+  databaseURL: 'https://ofppt-team.firebaseio.com',
+  storageBucket: 'ofppt-team.appspot.com',
+  messagingSenderId: '39191748226'
+
+};
 
 const routes: Routes = [
   {
@@ -157,9 +169,13 @@ const routes: Routes = [
 
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes)
+    BrowserModule, RouterModule.forRoot(routes),
+    AngularFireModule.initializeApp(firebaseconfig)
   ],
-  providers: [],
+  providers: [
+    AngularFireDatabase,
+    AngularFireAuth,
+    EtablissementService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
