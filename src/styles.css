@@ -7,3 +7,10 @@ body{
    background-repeat: no-repeat;
    height: 20%;
   }
+  .foot
+  {
+    padding-top: 60px;
+    display: block;
+  }
+  
+

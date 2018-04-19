@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
+
 import { Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -26,6 +27,10 @@ import { ConfirmeComponent } from './Validation/confirme/confirme.component';
 import { ChoixetablisementComponent } from './choixvisiteur/choixetablisement/choixetablisement.component';
 import { ChoixfiliereComponent } from './choixvisiteur/choixfiliere/choixfiliere.component';
 import { AffichagechoixComponent } from './choixvisiteur/affichagechoix/affichagechoix.component';
+import { ConexionComponent } from './conexion/conexion.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { PosteComponent } from './Disscusion/poste/poste.component';
+
 
 
 
@@ -100,7 +105,7 @@ const routes: Routes = [
   },
   {
 
-    path: 'espaceger', component: EspacedepComponent
+    path: 'espaceger', component: EspacegerComponent
   },
 
 
@@ -113,6 +118,15 @@ const routes: Routes = [
   },
   { 
     path:'affichagechoix',component:AffichagechoixComponent
+  },
+  { 
+    path:'inscription',component:InscriptionComponent
+  },
+  { 
+    path:'conexion',component:ConexionComponent
+  },
+  { 
+    path:'poste',component:PosteComponent
   }
  
 
@@ -137,19 +151,15 @@ const routes: Routes = [
     BadgeComponent,
     EspaceetaComponent,
     EspacedepComponent,
-
-
     EspacegerComponent,
-
     ConfirmeComponent,
-   ChoixetablisementComponent,
-   ChoixfiliereComponent,
-   AffichagechoixComponent,
-
-
-
-
-    EspacegerComponent
+    ChoixetablisementComponent,
+    ChoixfiliereComponent,
+    AffichagechoixComponent,
+    EspacegerComponent,
+    ConexionComponent,
+    InscriptionComponent,
+    PosteComponent
 
   ],
   imports: [
