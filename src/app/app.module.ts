@@ -6,7 +6,13 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 
+<<<<<<< HEAD
+
+
+import { Routes } from '@angular/router';
+=======
 import { GroupServService } from './group/group-serv.service';
+>>>>>>> origin/master
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -30,6 +36,10 @@ import { NotificationComponent } from './group/notification/notification.compone
 import { ChoixetablisementComponent } from './choixvisiteur/choixetablisement/choixetablisement.component';
 import { ChoixfiliereComponent } from './choixvisiteur/choixfiliere/choixfiliere.component';
 import { AffichagechoixComponent } from './choixvisiteur/affichagechoix/affichagechoix.component';
+import { ConexionComponent } from './conexion/conexion.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { PosteComponent } from './Disscusion/poste/poste.component';
+
 
 import { EtablissementService } from './services/etablissement.service';
 
@@ -122,7 +132,7 @@ const routes: Routes = [
   },
   {
 
-    path: 'espaceger', component: EspacedepComponent
+    path: 'espaceger', component: EspacegerComponent
   },
 
 
@@ -133,8 +143,22 @@ const routes: Routes = [
   {
     path: 'choixfiliere', component: ChoixfiliereComponent
   },
+<<<<<<< HEAD
+  { 
+    path:'affichagechoix',component:AffichagechoixComponent
+  },
+  { 
+    path:'inscription',component:InscriptionComponent
+  },
+  { 
+    path:'conexion',component:ConexionComponent
+  },
+  { 
+    path:'poste',component:PosteComponent
+=======
   {
     path: 'affichagechoix', component: AffichagechoixComponent
+>>>>>>> origin/master
   }
 
 
@@ -160,6 +184,15 @@ const routes: Routes = [
     EspacedepComponent,
     EspacegerComponent,
     ConfirmeComponent,
+<<<<<<< HEAD
+    ChoixetablisementComponent,
+    ChoixfiliereComponent,
+    AffichagechoixComponent,
+    EspacegerComponent,
+    ConexionComponent,
+    InscriptionComponent,
+    PosteComponent
+=======
     ListStagiaireComponent,
     ListFormateurComponent,
     NotificationComponent,
@@ -169,6 +202,7 @@ const routes: Routes = [
     ChoixfiliereComponent,
     AffichagechoixComponent,
     EspacegerComponent
+>>>>>>> origin/master
 
   ],
   imports: [
