@@ -21,8 +21,7 @@ export class NotificationComponent implements OnInit {
     {date: this.data, formateur: 'hossine',
     notification: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'}
   ];
-
-
+  
   constructor() {}
 
   ngOnInit() {

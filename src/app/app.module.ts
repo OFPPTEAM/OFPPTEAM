@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, NgModel } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AngularFireModule } from 'angularfire2';
@@ -171,7 +172,9 @@ const routes: Routes = [
 
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes),
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(routes),
     AngularFireModule.initializeApp(firebaseconfig)
   ],
   providers: [

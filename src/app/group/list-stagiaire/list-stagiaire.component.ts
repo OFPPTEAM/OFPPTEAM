@@ -8,13 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListStagiaireComponent implements OnInit {
 
-  stagiaire: any[];
-
-  constructor() {
-   
-    }
+  constructor() {}
 
   ngOnInit() {
+    
   }
-
 }
